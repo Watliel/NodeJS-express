@@ -7,12 +7,9 @@
   <body>
     <h1>{{ title }}</h1>
     <p>Welcome to {{ title }}</p>
-
-    <form method="GET" action="/ville"> 
-      <label>Ville:</label>  
-      <input  name= "ville"/>
-      <button type="validate" formmethod="GET">valider</button>
+    <form method="get" action="/ville"> 
+      <p> Ville : {{ ville }}</p> 
      </form>
+      
   </body>
 </html>
-
