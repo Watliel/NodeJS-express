@@ -6,10 +6,9 @@
   </head>
   <body>
     <h1>{{ title }}</h1>
-    <p>Welcome to {{ title }}</p>
-    <form method="get" action="/ville"> 
-      <p> Ville : {{ ville }}</p> 
-     </form>
+
+    <p>Hello friend and Welcome to -> {{ ville }}</p>
+    
       
   </body>
 </html>

@@ -6,8 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.get('/ville', function(req, res, next) {
-  var param = req.query.ville
+router.post('/ville', function(req, res, next) {
+  var param = req.body.ville
   res.render('ville', { title: 'Les villes que vous voulez', ville: param });
 });
 
