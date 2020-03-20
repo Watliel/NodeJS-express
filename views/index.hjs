@@ -7,7 +7,6 @@
   <body>
     <h1>{{ title }}</h1>
     <p>Welcome to {{ title }}</p>
-
     <form method="POST" action="/ville"> 
       <label>Ville:</label>  
       <input  name= "ville"/>
