@@ -8,8 +8,9 @@ var https = require('https');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Node App' });
 });
+
 
 function requestCityData(cityName) {
   return new Promise((resolve, reject) => {
@@ -24,9 +25,7 @@ function requestCityData(cityName) {
 }
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Node App' });
-});
+
 
 router.post('/ville', async function(req, res, next) {
   const data = await requestCityData(req.body.ville);
@@ -39,4 +38,5 @@ router.post('/ville', async function(req, res, next) {
     latt: latt
   });
 });
+
 module.exports = router;
